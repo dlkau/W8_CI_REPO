@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"com.example.addressbook","l":"com.example.addressbook"},{"m":"com.example.addressbook","l":"com.example.addressbook.controller"},{"m":"com.example.addressbook","l":"com.example.addressbook.model"}];updateSearchResults();
