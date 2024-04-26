@@ -9,9 +9,15 @@ import java.util.List;
 import java.sql.Connection;
 import java.sql.Statement;
 
+/**
+ * This class is used to interface with the database.
+ */
 public class SqliteContactDAO implements IContactDAO {
     private Connection connection;
 
+    /**
+     * This constructor is used to instantiate a SqliteContactDAO object.
+     */
     public SqliteContactDAO() {
         connection = SqliteConnection.getInstance();
         createTable();

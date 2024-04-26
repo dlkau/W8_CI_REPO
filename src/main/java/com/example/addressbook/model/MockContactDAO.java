@@ -6,6 +6,10 @@ import com.example.addressbook.model.IContactDAO;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This method is used to implement the IContactDAO interface whilst it had not been connnected to a
+ * database.
+ */
 public class MockContactDAO implements IContactDAO {
     /**
      * A static list of contacts to be used as a mock database.

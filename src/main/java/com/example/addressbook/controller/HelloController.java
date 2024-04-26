@@ -47,12 +47,19 @@ Elementum nibh tellus molestie nunc non blandit massa.""");
         welcomeText.setText("Welcome to JavaFX Application!");
     }
 
+    /**
+     * This method enables the next button to be selected (accept input).
+     */
     @FXML
     protected void onAgreeCheckBoxClick(){
         boolean accepted = agreeCheckBox.isSelected();
         nextButton.setDisable(!accepted);
     }
 
+    /**
+     * This method is used to load the next page when the user selects the next button.
+     * @throws IOException this is thrown if there is an issue with input or output.
+     */
     @FXML
     protected void onNextButtonClick() throws IOException {
         Stage stage = (Stage) nextButton.getScene().getWindow();
@@ -61,6 +68,9 @@ Elementum nibh tellus molestie nunc non blandit massa.""");
         stage.setScene(scene);
     }
 
+    /**
+     * This method is used to close the stage should the user no longer need to use the application.
+     */
     @FXML
     protected void onCancelButtonClick(){
         Stage stage = (Stage) nextButton.getScene().getWindow();

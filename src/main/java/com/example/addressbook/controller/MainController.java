@@ -115,14 +115,8 @@ public class MainController {
     private void onEditConfirm(){
         // Get the selected contact from the list view
         Contact selectedContact = contactsListView.getSelectionModel().getSelectedItem();
-
-
-
-
         emailTextField.setStyle(null);
         if(selectedContact != null){
-
-
             // Check the email
             String pattern = "^[\\w\\-\\.]+@([\\w-]+\\.)+[\\w-]{2,}$";
             boolean isValidEmail = Pattern.compile(pattern).matcher(emailTextField.getText()).matches();
@@ -206,6 +200,9 @@ public class MainController {
         res.setText("Contact not found.");
     }
 
+    /**
+     * This method is called when the main page is called to be rendered.
+     */
     @FXML
     public void initialize(){
         contactsListView.setCellFactory(this::renderCell);
